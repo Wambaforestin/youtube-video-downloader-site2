@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-16">
+  <div class="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center">
       <div class="absolute inset-0 bg-[url('/hero-pattern.svg')] opacity-10"></div>
