@@ -7,9 +7,10 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
-import { Download, PlayCircle, Shield, HelpCircle, UserPlus } from "lucide-react"
+import { Download, PlayCircle, Shield, HelpCircle, UserPlus, LogIn } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { CreateAccountDialog } from "@/components/CreateAccountDialog"
+import { SignInDialog } from "@/components/SignInDialog"
 
 const Navigation = () => {
   return (
@@ -81,12 +82,20 @@ const Navigation = () => {
             </NavigationMenuList>
           </NavigationMenu>
         </div>
-        <CreateAccountDialog>
-          <Button className="bg-[#ea384c] hover:bg-[#ea384c]/90">
-            <UserPlus className="mr-2 h-4 w-4" />
-            Create Account
-          </Button>
-        </CreateAccountDialog>
+        <div className="flex items-center space-x-4">
+          <SignInDialog>
+            <Button variant="outline" className="border-[#ea384c] text-[#ea384c] hover:bg-[#ea384c]/10">
+              <LogIn className="mr-2 h-4 w-4" />
+              Sign In
+            </Button>
+          </SignInDialog>
+          <CreateAccountDialog>
+            <Button className="bg-[#ea384c] hover:bg-[#ea384c]/90">
+              <UserPlus className="mr-2 h-4 w-4" />
+              Create Account
+            </Button>
+          </CreateAccountDialog>
+        </div>
       </div>
     </nav>
   )
