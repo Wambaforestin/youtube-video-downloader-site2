@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #ea384c;
+}
+
+body {
+  @apply antialiased text-gray-900 bg-black;
+}
