@@ -14,9 +14,11 @@
             <a href="#features" class="text-white hover:text-[#ea384c] transition-colors" @click.prevent="scrollToSection('features')">Features</a>
             <a href="#how-it-works" class="text-white hover:text-[#ea384c] transition-colors" @click.prevent="scrollToSection('how-it-works')">How It Works</a>
             <a href="#contact" class="text-white hover:text-[#ea384c] transition-colors" @click.prevent="scrollToSection('contact')">Contact</a>
-            <button class="bg-[#ea384c] text-white px-6 py-2 rounded-full hover:bg-[#ea384c]/90 transition-colors">
-              Get Started
-            </button>
+            <AuthDialog>
+              <button class="bg-[#ea384c] text-white px-6 py-2 rounded-full hover:bg-[#ea384c]/90 transition-colors">
+                Get Started
+              </button>
+            </AuthDialog>
           </div>
         </div>
       </div>
@@ -31,8 +33,13 @@
 </template>
 
 <script>
+import { AuthDialog } from '@/components/AuthDialog'
+
 export default {
   name: 'App',
+  components: {
+    AuthDialog
+  },
   methods: {
     scrollToSection(sectionId) {
       const element = document.getElementById(sectionId);
