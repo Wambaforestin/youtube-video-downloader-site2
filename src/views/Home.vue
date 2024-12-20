@@ -93,7 +93,7 @@
             <div class="mb-8">
               <h3 class="text-xl font-semibold text-[#ea384c] mb-4">⚠️ Important Note about Antivirus</h3>
               <p class="text-gray-300 mb-4">
-                When downloading or running Family YouTube Downloader, Windows Defender or your antivirus might show a warning. 
+                When downloading or running YouTube Downloader, Windows Defender or your antivirus might show a warning. 
                 <strong>Don't worry, this is normal and your application is safe.</strong>
               </p>
             </div>
