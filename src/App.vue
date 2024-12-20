@@ -10,10 +10,10 @@
             </router-link>
           </div>
           <div class="hidden md:flex items-center space-x-8">
-            <router-link to="/" class="text-white hover:text-[#ea384c] transition-colors">Home</router-link>
-            <router-link to="/features" class="text-white hover:text-[#ea384c] transition-colors">Features</router-link>
-            <router-link to="/about" class="text-white hover:text-[#ea384c] transition-colors">About</router-link>
-            <router-link to="/contact" class="text-white hover:text-[#ea384c] transition-colors">Contact</router-link>
+            <a href="#home" class="text-white hover:text-[#ea384c] transition-colors" @click.prevent="scrollToSection('home')">Home</a>
+            <a href="#features" class="text-white hover:text-[#ea384c] transition-colors" @click.prevent="scrollToSection('features')">Features</a>
+            <a href="#how-it-works" class="text-white hover:text-[#ea384c] transition-colors" @click.prevent="scrollToSection('how-it-works')">How It Works</a>
+            <a href="#contact" class="text-white hover:text-[#ea384c] transition-colors" @click.prevent="scrollToSection('contact')">Contact</a>
             <button class="bg-[#ea384c] text-white px-6 py-2 rounded-full hover:bg-[#ea384c]/90 transition-colors">
               Get Started
             </button>
@@ -32,7 +32,18 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  methods: {
+    scrollToSection(sectionId) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+  }
 }
 </script>
 

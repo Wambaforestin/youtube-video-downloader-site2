@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center">
+    <section id="home" class="relative min-h-screen flex items-center">
       <div class="absolute inset-0 bg-[url('/hero-pattern.svg')] opacity-10"></div>
       <div class="container mx-auto px-4 py-32">
         <div class="max-w-4xl mx-auto text-center">
@@ -25,7 +25,7 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-24 bg-black/50">
+    <section id="features" class="py-24 bg-black/50">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-16">
           Revolutionary Features
@@ -63,7 +63,7 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="py-24 bg-gradient-to-b from-black/50 to-transparent">
+    <section id="stats" class="py-24 bg-gradient-to-b from-black/50 to-transparent">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div class="p-8">
@@ -83,7 +83,7 @@
     </section>
 
     <!-- Installation Guide Section -->
-    <section class="py-24 bg-black/30">
+    <section id="how-it-works" class="py-24 bg-black/30">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-8">
@@ -193,7 +193,7 @@
     </section>
 
     <!-- Support Section -->
-    <section class="py-24 bg-gradient-to-b from-black/30 to-transparent">
+    <section id="contact" class="py-24 bg-gradient-to-b from-black/30 to-transparent">
       <div class="container mx-auto px-4">
         <div class="max-w-3xl mx-auto text-center">
           <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">
