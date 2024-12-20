@@ -1,6 +1,5 @@
 <template>
-  <section class="relative min-h-screen flex items-center">
-    <div class="absolute inset-0 bg-[url('/hero-pattern.svg')] opacity-10"></div>
+  <section class="relative min-h-screen flex items-center bg-gradient-to-b from-gray-900 to-gray-800">
     <div class="container mx-auto px-4 py-32">
       <div class="max-w-4xl mx-auto text-center">
         <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
