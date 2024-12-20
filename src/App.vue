@@ -6,7 +6,7 @@
           <div class="flex items-center space-x-4">
             <router-link to="/" class="flex items-center space-x-2">
               <i class="fas fa-play-circle text-[#ea384c] text-2xl"></i>
-              <span class="text-white font-bold text-xl">Family Video Saver</span>
+              <span class="text-white font-bold text-xl">Youtube Downloader</span>
             </router-link>
           </div>
           <div class="hidden md:flex items-center space-x-8">
